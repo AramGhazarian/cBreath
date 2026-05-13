@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="C-Breath — guided breathing to calm panic, sharpen focus, and support smarter decisions. Designed by the Center for Behavioral Decisions.">
+    <title>C-Breath — Breathe. Pause. Decide.</title>
+    <link rel="icon" type="image/png" href="cbicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="#top" class="logo-link" aria-label="C-Breath home">
+            <img src="cbicon.png" alt="" class="logo-mark">
+            <span class="logo-text">C-Breath</span>
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="#practice">Practice</a>
+            <a href="#science">Science</a>
+            <a href="#premium">Premium</a>
+            <a href="https://apps.apple.com/ge/app/cbreath-thoughtful-decisions/id6739448135" class="nav-cta" target="_blank" rel="noopener">Get the App</a>
+        </nav>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow">A practice for the modern mind</p>
+                    <h1>
+                        <span class="line-1">Breathe.</span>
+                        <span class="line-2"><em>Pause.</em></span>
+                        <span class="line-3">Decide.</span>
+                    </h1>
+                    <p class="lede">
+                        C-Breath is a quiet companion for the moments that matter — when panic rises,
+                        when focus slips, when a hard choice waits on the other side of one slow breath.
+                    </p>
+                    <div class="cta-row">
+                        <a href="https://apps.apple.com/ge/app/cbreath-thoughtful-decisions/id6739448135" class="btn-primary" target="_blank" rel="noopener">
+                            <span>Begin Breathing</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/>
+                            </svg>
+                        </a>
+                        <a href="#practice" class="btn-ghost">Explore the Sessions</a>
+                    </div>
+                    <p class="hero-footnote">Designed by the <span class="cbd-credit">Center <em>for</em> Behavioral Decisions</span></p>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="breathing-orb" id="breathingOrb">
+                        <div class="orb-ring ring-1"></div>
+                        <div class="orb-ring ring-2"></div>
+                        <div class="orb-ring ring-3"></div>
+                        <div class="orb-ring ring-4"></div>
+                        <div class="orb-core">
+                            <span class="orb-text" id="orbText">Inhale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-cue" aria-hidden="true">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- QUOTE STRIP -->
+        <section class="quote-strip" aria-label="Today's quote">
+            <blockquote>
+                <p>"You don't need a perfect breath — just keep going."</p>
+                <cite>— a daily quote from C-Breath</cite>
+            </blockquote>
+        </section>
+
+        <!-- PRACTICE / CATEGORIES -->
+        <section class="practice" id="practice">
+            <header class="section-header">
+                <p class="eyebrow">Six sessions, one anchor</p>
+                <h2>A breath for every <em>moment</em>.</h2>
+                <p class="section-lede">
+                    Each session uses a clinically-grounded rhythm — extended exhales, balanced holds,
+                    deliberate pauses — tuned to a specific need.
+                </p>
+            </header>
+
+            <div class="card-grid">
+                <article class="practice-card" data-color="panic">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="30" cy="30" r="22" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/><circle cx="30" cy="30" r="6" fill="currentColor"/></svg>
+                    </div>
+                    <h3>Panic Relief</h3>
+                    <p class="rhythm">4 · 4 · 8</p>
+                    <p>An extended-exhale technique that gently signals safety to the nervous system. For the moments the storm hits hardest.</p>
+                </article>
+
+                <article class="practice-card" data-color="relax">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><path d="M10 30 Q 30 10, 50 30 T 90 30" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 38 Q 30 18, 50 38" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/><circle cx="30" cy="30" r="3" fill="currentColor"/></svg>
+                    </div>
+                    <h3>Relaxation</h3>
+                    <p class="rhythm">4 · 4 · 4 · 4</p>
+                    <p>A pause button for a busy day. Soft, balanced cycles to release tension from shoulders, jaw, and mind.</p>
+                </article>
+
+                <article class="practice-card" data-color="focus">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="30" y1="14" x2="30" y2="22" stroke="currentColor" stroke-width="1.5"/><line x1="30" y1="38" x2="30" y2="46" stroke="currentColor" stroke-width="1.5"/><line x1="14" y1="30" x2="22" y2="30" stroke="currentColor" stroke-width="1.5"/><line x1="38" y1="30" x2="46" y2="30" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>Focus</h3>
+                    <p class="rhythm">4 · 3 · 4 · 1</p>
+                    <p>Steady alertness without strain. Use before a deep work block, an exam, or a difficult conversation.</p>
+                </article>
+
+                <article class="practice-card" data-color="stress">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><rect x="14" y="14" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="22" y="22" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/></svg>
+                    </div>
+                    <h3>Reducing Stress</h3>
+                    <p class="rhythm">4 · 4 · 4 · 4</p>
+                    <p>Classic box breathing. Four equal parts to find balance — a reset for the moments between meetings.</p>
+                </article>
+
+                <article class="practice-card" data-color="resilience">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><path d="M30 12 L 46 22 L 46 38 L 30 48 L 14 38 L 14 22 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M30 20 L 38 25 L 38 35 L 30 40 L 22 35 L 22 25 Z" fill="none" stroke="currentColor" stroke-width="1" opacity="0.6"/></svg>
+                    </div>
+                    <h3>Resilience</h3>
+                    <p class="rhythm">4 · 6 · 6 · 4</p>
+                    <p>Composure under pressure. Deliberate pauses that train the body to stay calm when the stakes are real.</p>
+                </article>
+
+                <article class="practice-card premium" data-color="insight">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M30 18 L 30 30 L 38 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <span class="premium-tag">Premium</span>
+                    <h3>Insightful Decisions</h3>
+                    <p class="rhythm">4 · 8 · 6 · 2</p>
+                    <p>Long holds create space to think. For the choices that deserve a clear head — not a fast answer.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SCIENCE -->
+        <section class="science" id="science">
+            <div class="science-inner">
+                <div class="science-copy">
+                    <p class="eyebrow">Grounded in research</p>
+                    <h2>Built on the <em>science</em> of the slow breath.</h2>
+                    <p>
+                        The extended exhale activates parasympathetic tone via the vagus nerve, lowering
+                        heart rate and signaling safety to the brain. Each protocol draws on peer-reviewed
+                        research in respiratory physiology and behavioral medicine.
+                    </p>
+                    <ul class="citation-list">
+                        <li>Brown &amp; Gerbarg, 2005 — sudarshan kriya &amp; vagal tone</li>
+                        <li>Jerath et al., 2006 — slow breathing &amp; the autonomic nervous system</li>
+                        <li>Ma et al., 2017 — diaphragmatic breathing on attention &amp; cortisol</li>
+                        <li>Gerritsen &amp; Band, 2018 — breath-controlled vagal regulation</li>
+                    </ul>
+                </div>
+                <div class="science-visual" aria-hidden="true">
+                    <div class="stat-card">
+                        <span class="stat-number">8s</span>
+                        <span class="stat-label">extended exhale<br>for panic protocol</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4×</span>
+                        <span class="stat-label">box breathing<br>equal counts</span>
+                    </div>
+                    <div class="stat-card wide">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">protocols, each tuned to a specific behavioral outcome</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIUM -->
+        <section class="premium-section" id="premium">
+            <div class="premium-card">
+                <p class="eyebrow">C-Breath Premium</p>
+                <h2>Make smarter decisions <em>with</em> C-Breath Premium.</h2>
+                <p>
+                    Unlock <em>Insightful Decisions</em> — a long-hold protocol designed for the
+                    moments before a hard choice. Plus deeper sessions, the full quote library,
+                    and a quiet way to support the work behind the science.
+                </p>
+                <div class="price-row">
+                    <div class="price-tile">
+                        <p class="price-label">Monthly</p>
+                        <p class="price-value">$1.99</p>
+                        <p class="price-unit">per month</p>
+                    </div>
+                    <div class="price-tile featured">
+                        <span class="price-badge">Best value</span>
+                        <p class="price-label">Yearly</p>
+                        <p class="price-value">$19.99</p>
+                        <p class="price-unit">per year</p>
+                    </div>
+                </div>
+                <a href="https://apps.apple.com/ge/app/cbreath-thoughtful-decisions/id6739448135" class="btn-primary" target="_blank" rel="noopener">
+                    <span>Try Premium</span>
+                    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                        <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                </a>
+                <p class="fine-print">Prices illustrative. Final pricing shown in-app on the App Store.</p>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD / FINAL -->
+        <section class="download" id="download">
+            <div class="download-inner">
+                <img src="cbicon.png" alt="" class="download-mark">
+                <h2>One slow breath at a <em>time</em>.</h2>
+                <p>Available on iPhone and iPad.</p>
+                <div class="cta-row">
+                    <a href="https://apps.apple.com/ge/app/cbreath-thoughtful-decisions/id6739448135" class="btn-primary appstore" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                            <path fill="currentColor" d="M17.05 12.04c-.03-3.13 2.55-4.63 2.67-4.71-1.46-2.13-3.72-2.42-4.52-2.45-1.92-.2-3.75 1.13-4.72 1.13-.98 0-2.48-1.1-4.08-1.07-2.1.03-4.04 1.22-5.12 3.1-2.18 3.79-.56 9.39 1.57 12.47 1.04 1.51 2.28 3.2 3.9 3.14 1.57-.06 2.16-1.01 4.06-1.01 1.9 0 2.43 1.01 4.08.98 1.69-.03 2.76-1.53 3.79-3.05 1.2-1.75 1.69-3.45 1.71-3.54-.04-.02-3.28-1.26-3.34-4.99zM13.94 3.69c.87-1.05 1.45-2.51 1.29-3.96-1.25.05-2.76.83-3.65 1.88-.8.93-1.5 2.42-1.31 3.85 1.39.11 2.81-.71 3.67-1.77z"/>
+                        </svg>
+                        <span>Download on the App Store</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="cbicon.png" alt="" class="footer-mark">
+                <p>C-Breath</p>
+            </div>
+            <p class="footer-credit">
+                Designed by the <span class="cbd-credit">Center <em>for</em> Behavioral Decisions</span>
+            </p>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="#practice">Practice</a>
+                <a href="#science">Science</a>
+                <a href="#premium">Premium</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+            </nav>
+            <p class="footer-meta">&copy; <span id="year"></span> C-Breath. Breathe gently.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
